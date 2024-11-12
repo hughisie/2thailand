@@ -3,33 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to 2thailand - Explore Thailand with Us</title>
+    <title>2thailand.com - Discover Thailand's Treasures</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4VKRJJVZF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X4VKRJJVZF');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3690215112189621"
+         crossorigin="anonymous"></script>
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <a href="index.html" class="nav-link">Home</a>
         <a href="blog.html" class="nav-link">Blog</a>
         <a href="about.html" class="nav-link">About Us</a>
-        <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
     </nav>
 
+    <!-- Domain Sale Banner -->
     <header class="sale-banner">
-        <p>This domain is available for sale. <a href="#inquiry-form" class="cta-link">Inquire here</a></p>
+        <p>This domain is for sale. Contact us below with reasonable offers.</p>
     </header>
 
     <div class="container">
+        <!-- Header Image -->
         <header class="main-header">
-            <h1>Welcome to 2thailand - Discover the Wonders of Thailand</h1>
-            <p>Explore our guide to Thailand's best destinations, travel tips, and cultural insights.</p>
-            <img src="2thailand.jpg" alt="Scenic Thailand" class="cruise-image">
+            <h1>Explore Thailand’s Treasures</h1>
+            <img src="image1.jpg" alt="Beautiful Thailand landscape" class="header-image">
+            <p>Uncover the beauty, culture, and excitement of Thailand.</p>
         </header>
 
+        <!-- Featured Blog Post -->
         <section class="content-section">
-            <h2>Exploring Thailand’s Ancient Temples</h2>
-            <h3>Introduction</h3>
-            <p>Thailand is a land where history and spirituality are deeply intertwined, evident in its many ancient temples...</p>
+            <h2>Top Destinations to Visit in Thailand 🌏</h2>
+            <p>Thailand is a paradise for travelers seeking vibrant culture, scenic beauty, and friendly locals. Here are the must-see places:</p>
+            
+            <h3>Bangkok: Must-See Sights, Temples, and City Highlights</h3>
+            <p>No trip to Thailand is complete without exploring Bangkok, the vibrant capital. Visit the Grand Palace, the Temple of the Emerald Buddha, and Wat Arun for breathtaking views.</p>
+            <!-- Expanded content continues based on the original blog post -->
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-section">
+            <h2>About Us</h2>
+            <p>2thailand.com is dedicated to showcasing the incredible sights, experiences, and adventures that Thailand has to offer. From cultural festivals to tranquil beaches, we bring you the best of Thailand!</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="inquiry-form">
+            <h2>Contact Us</h2>
+            <p>If you're interested in purchasing this domain, please fill out the form below.</p>
+
+            <form action="https://formspree.io/f/mvgoalyd" method="POST">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <div class="g-recaptcha" data-sitekey="6LcsQnsqAAAAAMm6FrENl23gaFmCL9eVspkPNRs1"></div>
+                
+                <input type="submit" value="Send Inquiry">
+            </form>
         </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 2thailand.com | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
 </body>
 </html>
